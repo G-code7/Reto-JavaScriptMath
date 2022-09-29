@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>descuento</title>
+</head>
+<body>
+    <p>Ingresa la cantidad y el porcentaje para optener el descuento y el precio total</p>
+
+    <form id="Form">
+        <label for="Precio">Escsribe el precio de tu producto</label> 
+        <input id="Precio" placeholder="Escribe el precio" type="number">
+        <label for="Descuento"> Escribe el &#37 del descuento</label>        
+        <input id="Descuento" placeholder="Escribe el descuento sin &quot;&#37&quot;; " type="number">
+        <button type="button" id="btnCalcular">Calcular</button>
+
+        <p id="resultDescuento">Descuento total</p>
+        <p id="result">Precio total</p>
+    </form>
+
+<script src="./math.js"></script>
+</body>
+</html>

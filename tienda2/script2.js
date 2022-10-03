@@ -1,5 +1,5 @@
 let inputPrice = document.querySelector('#displayPrice1');
-const inputCoupon = document.querySelector('#coupon');formulas
+const inputCoupon = document.querySelector('#coupon');
 const btn = document.querySelector('#btn');
 const pResult = document.querySelector('#result');
 
@@ -19,32 +19,32 @@ function calcularPrecioConDescuento() {
   const coupon = inputCoupon.value;
 
   if (!inputPrice || !coupon) {
-    pResult.innerText = 'aprovecha nuestras increibles ofertas e itroduce un codigo de descuento.';
+    pResult.innerText = 'CHANCLA por favor llena el formulario';
     return;
   }
   
   let discount;
 
-// if (couponOBJ[coupon]) {
-//     discount = couponOBJ[coupon];
+if (couponOBJ[coupon]) {
+    discount = couponOBJ[coupon];
 
-// }else {
-//     pResult.innerText = 'Este cupon no es valido!';
-//     return;
-// }
+}else {
+    pResult.innerText = 'Este cupon no es valido!';
+    return;
+}
 
-  switch (coupon) {
-    case 'Gustavo':
-      discount = 40;
+//   switch (coupon) {
+//     case 'Gustavo':
+//       discount = 40;
 
-      break;
-    case 'Hello2000':
-      discount = 25;
-      break;
-    default:
-      pResult.innerText = 'Este cupon no es valido!';
-      return;
-  }  
+//       break;
+//     case 'Hello2000':
+//       discount = 25;
+//       break;
+//     default:
+//       pResult.innerText = 'Este cupon no es valido!';
+//       return;
+//   }  
   const newPrice = (inputPrice * ((100 - discount) / 100));
   pResult.innerText = 'Cupon valido! El precio de tu producto ahora es: $' + newPrice;
   document.getElementById("displayPrice1").style.display = "none";

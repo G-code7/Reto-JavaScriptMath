@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Promedios</title>
 </head>
 <body>
     <h1> Introduce un valor a la vez para crear un promedio de los numeros</h1>
-    <input id="inputvalue" value="0" type="number"></input>
+    <p>abre la consola para visualizar los resultados</p>
+    <input id="inputvalue" value="0" type="number" autofocus></input>
   
     <div class="buttons">
         <label for="store">Guarda el numero que ingresaste </label>
@@ -17,6 +19,10 @@
         <button id="show" type="button">Show</button>
         <label for="average">muestra el promedio de esos numeros </label>
         <button id="average" type="button">promedio</button>
+        <label for="middle"> calcula la mediana</label>
+        <button id="middle" type="">mediana</button>
+        <label for="moda"> calcula la moda</label>
+        <button id="moda" type="">moda</button>
     </div>
     
     <div id="error"></div>
